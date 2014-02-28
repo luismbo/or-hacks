@@ -11,10 +11,10 @@
 // and 50 Euros for each sale of an ammonium chloride unit. Volsay would like a
 // production plan maximizing its profits given its available stocks. 
 
-Products   = { "gas" "chloride" };
-Components = { "nitrogen" "hydrogen" "chlorine" };
+Products   = { gas chloride };
+Components = { nitrogen hydrogen chlorine };
 
 Stock  = [ 50 180 40 ];
-Demand = #[      "gas":[ 1 3 0 ],
-            "chloride":[ 1 4 1 ] ]#;
+Demand = #[      gas: [ 1 3 0 ],
+            chloride: [ 1 4 1 ] ]#;
 Profit = [ 40 50 ]; 
