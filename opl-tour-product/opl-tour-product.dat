@@ -1,0 +1,8 @@
+Products  = { kluski capellini fettucine };
+Resources = { flour eggs };
+
+Product = #[    kluski: <0.6 0.8 [0.5 0.2] 100>
+             capellini: <0.8 0.9 [0.4 0.4] 200>
+             fettucine: <0.3 0.4 [0.3 0.6] 300> ]#;
+
+Capacity = #[ flour:20 eggs:40 ]#;

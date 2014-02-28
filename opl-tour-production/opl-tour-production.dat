@@ -1,0 +1,10 @@
+Products  = { kluski capellini fettucine };
+Resources = { flour eggs };
+
+Consumption = #[    kluski: [0.5 0.2]
+                 capellini: [0.4 0.4]
+                 fettucine: [0.3 0.6] ]#;
+Capacity    = [ 20 40 ];
+Demand      = [ 100 200 300 ];
+InCost      = [ 0.6 0.8 0.3 ];
+OutCost     = [ 0.8 0.9 0.4 ];
