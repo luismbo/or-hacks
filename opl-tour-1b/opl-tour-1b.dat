@@ -1,0 +1,20 @@
+/*********************************************
+ * OPL 12.6.0.0 Data
+ * Author: luismbo
+ * Creation Date: 28 Feb 2014 at 14:29:06
+ *********************************************/
+
+// Consider a Belgian company Volsay, which specializes in producing ammoniac
+// gas (NH3) and ammonium chloride (NH4Cl). Volsay has at its disposal 50 units
+// of nitrogen (N), 180 units of hydrogen (H), and 40 units of chlorine (Cl).
+// The company makes a profit of 40 Euros for each sale of an ammoniac gas unit
+// and 50 Euros for each sale of an ammonium chloride unit. Volsay would like a
+// production plan maximizing its profits given its available stocks. 
+
+Products   = { "gas" "chloride" };
+Components = { "nitrogen" "hydrogen" "chlorine" };
+
+Stock  = [ 50 180 40 ];
+Demand = #[      "gas":[ 1 3 0 ],
+            "chloride":[ 1 4 1 ] ]#;
+Profit = [ 40 50 ]; 
