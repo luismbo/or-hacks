@@ -1,0 +1,72 @@
+Default LOCALE: English_United Kingdom.1252
+IBM ILOG CPLEX Optimization Studio Preview Edition good for 65 more days.  The CPLEX Optimizers will solve problems up to 1000 variables and 1000 constraints.
+CP Optimizer solves problems with a search space of up to 2^1000
+
+<<< setup, at 0.015625s, took 0.031s
+
+
+<<< generate, at 0.078125s, took 0.575s
+
+
+<<< export model: f1-ex1.lp, at 0.09375s, took 0.028s
+
+Found incumbent of value 68.000000 after 0.05 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 1 columns.
+Reduced MIP has 10 rows, 25 columns, and 50 nonzeros.
+Reduced MIP has 25 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.05 sec. (0.02 ticks)
+Probing time = 0.02 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 10 rows, 25 columns, and 50 nonzeros.
+Reduced MIP has 25 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Clique table members: 10.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.03 sec. (0.02 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           68.0000      346.0000        5  408.82%
+*     0     0      integral     0       73.0000       73.0000        5    0.00%
+Elapsed time = 0.23 sec. (0.17 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.25 sec. (0.17 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.25 sec. (0.17 ticks)
+
+<<< solve, at 0.15625s, took 0.262s
+
+
+OBJECTIVE: 73
+
+<<< post process, at 0.15625s, took 0s
+
+// solution (optimal) with objective 73
+// Quality Incumbent solution:
+// MILP objective                                7.3000000000e+001
+// MILP solution norm |x| (Total, Max)           5.00000e+000 1.00000e+000
+// MILP solution error (Ax=b) (Total, Max)       0.00000e+000 0.00000e+000
+// MILP x bound error (Total, Max)               0.00000e+000 0.00000e+000
+// MILP x integrality error (Total, Max)         0.00000e+000 0.00000e+000
+// MILP slack bound error (Total, Max)           0.00000e+000 0.00000e+000
+// 
+
+x = [[0
+             0 0 0 1]
+             [0 1 0 0 0]
+             [1 0 0 0 0]
+             [0 0 1 0 0]
+             [0 0 0 1 0]];
+
+<<< done, at 0.15625s, took 0.013s
+

@@ -1,0 +1,73 @@
+Default LOCALE: English_United Kingdom.1252
+IBM ILOG CPLEX Optimization Studio Preview Edition good for 65 more days.  The CPLEX Optimizers will solve problems up to 1000 variables and 1000 constraints.
+CP Optimizer solves problems with a search space of up to 2^1000
+
+<<< setup, at 0.015625s, took 0.034s
+
+
+<<< generate, at 0.046875s, took 0.119s
+
+
+<<< export model: opl-tour-knapsack.lp, at 0.0625s, took 0.008s
+
+Found incumbent of value 0.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 1 rows and 1 columns.
+Reduced MIP has 6 rows, 12 columns, and 42 nonzeros.
+Reduced MIP has 1 binaries, 11 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 6 rows, 12 columns, and 42 nonzeros.
+Reduced MIP has 1 binaries, 11 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Probing time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.01 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000   375606.0000        6     --- 
+      0     0   261952.9323     3        0.0000   261952.9323        6     --- 
+*     0+    0                       261890.0000   261952.9323        6    0.02%
+      0     0   261922.4538     2   261890.0000       Cuts: 3        9    0.01%
+*     0     0      integral     0   261922.0000   261922.0000       10    0.00%
+Elapsed time = 0.06 sec. (0.18 ticks, tree = 0.00 MB, solutions = 3)
+
+Mixed integer rounding cuts applied:  1
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.08 sec. (0.18 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.08 sec. (0.18 ticks)
+
+<<< solve, at 0.125s, took 0.072s
+
+
+OBJECTIVE: 261922
+
+<<< post process, at 0.125s, took 0s
+
+// solution (optimal) with objective 261922
+// Quality Incumbent solution:
+// MILP objective                                2.6192200000e+005
+// MILP solution norm |x| (Total, Max)           9.07900e+003 6.49900e+003
+// MILP solution error (Ax=b) (Total, Max)       4.54747e-012 3.63798e-012
+// MILP x bound error (Total, Max)               0.00000e+000 0.00000e+000
+// MILP x integrality error (Total, Max)         1.13687e-012 9.09495e-013
+// MILP slack bound error (Total, Max)           0.00000e+000 0.00000e+000
+// 
+
+Take = [0
+         0 0 154 0 0 0 913 333 0 6499 1180];
+
+<<< done, at 0.125s, took 0.02s
+

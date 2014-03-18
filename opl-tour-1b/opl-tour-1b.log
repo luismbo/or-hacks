@@ -1,0 +1,45 @@
+Default LOCALE: English_United Kingdom.1252
+IBM ILOG CPLEX Optimization Studio Preview Edition good for 65 more days.  The CPLEX Optimizers will solve problems up to 1000 variables and 1000 constraints.
+CP Optimizer solves problems with a search space of up to 2^1000
+
+<<< setup, at 0s, took 0.031s
+
+
+<<< generate, at 0s, took 0.07s
+
+
+<<< export model: opl-tour-1b.lp, at 0.015625s, took 0.007s
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Reduced LP has 2 rows, 2 columns, and 4 nonzeros.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual infeasibility =             2.500000
+Iteration:     3   Dual objective     =          2300.000000
+
+<<< solve, at 0.015625s, took 0.003s
+
+
+OBJECTIVE: 2300
+
+<<< post process, at 0.015625s, took 0s
+
+// solution (optimal) with objective 2300
+// Quality There are no bound infeasibilities.
+// There are no reduced-cost infeasibilities.
+// Maximum Ax-b  residual             = 0
+// Maximum c-B'pi residual            = 0
+// Maximum |x|                        = 30
+// Maximum |slack|                    = 10
+// Maximum |pi|                       = 10
+// Maximum |red-cost|                 = 1
+// Condition number of unscaled basis = 3.0e+001
+// 
+
+Production = [20
+         30];
+
+<<< done, at 0.015625s, took 0.002s
+
